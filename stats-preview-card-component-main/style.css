@@ -1,0 +1,81 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.4;
+}
+
+.main {
+  display: flex;
+  width: 82%;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.main--child {
+  flex: 1;
+}
+
+.main__img {
+  width: 100%;
+}
+
+.main__info {
+  color: white;
+  background-color: hsl(244, 38%, 16%);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main__info__heading,
+.main__info__desc {
+  grid-column: span 3;
+}
+
+.main__info__heading {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.main__info__heading__highlight {
+  color: hsl(277, 64%, 61%);
+}
+
+.main__info__desc {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main__info__data {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.main__info__data--nums {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}

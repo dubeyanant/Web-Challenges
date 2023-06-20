@@ -12,13 +12,38 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
     <title>Frontend Mentor | Stats preview card component</title>
 
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
+    <div class="main">
+      <div class="main__info main--child">
+        <p class="main__info__heading">
+          Get <span class="main__info__heading__highlight">insights</span> that
+          help your business grow.
+        </p>
+        <p class="main__info__desc">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <p class="main__info__data">
+          <span class="main__info__data--nums">10k+</span>COMPANIES
+        </p>
+        <p class="main__info__data">
+          <span class="main__info__data--nums">314</span>TEMPLATES
+        </p>
+        <p class="main__info__data">
+          <span class="main__info__data--nums">12M+</span>QUERIES
+        </p>
+      </div>
+      <img
+        class="main__img main--child"
+        src="images/image-header-desktop.jpg"
+      />
+    </div>
   </body>
 </html>
