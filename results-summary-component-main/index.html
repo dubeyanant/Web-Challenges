@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="left-div flex-child">
+        <p class="title">Your Result</p>
+        <div class="circle-left-div">
+          <p class="marks">76</p>
+          <p class="total">of 100</p>
+        </div>
+        <p class="great">Great</p>
+        <p class="remarks">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="right-div flex-child">
+        <p class="summary">Summary</p>
+        <div class="marks-right-div">
+          <div class="marks-small-div reaction">
+            <img src="assets/images/icon-reaction.svg" />
+            <p class="name name-reaction">Reaction</p>
+            <p>80 <span class="hundred">/ 100</span></p>
+          </div>
+          <div class="marks-small-div memory">
+            <img src="assets/images/icon-memory.svg" />
+            <p class="name name-memory">Memory</p>
+            <p>92 <span class="hundred">/ 100</span></p>
+          </div>
+          <div class="marks-small-div verbal">
+            <img src="assets/images/icon-verbal.svg" />
+            <p class="name name-verbal">Verbal</p>
+            <p>61 <span class="hundred">/ 100</span></p>
+          </div>
+          <div class="marks-small-div visual">
+            <img src="assets/images/icon-visual.svg" />
+            <p class="name name-visual">Visual</p>
+            <p>72 <span class="hundred">/ 100</span></p>
+          </div>
+        </div>
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
