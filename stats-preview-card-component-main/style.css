@@ -29,6 +29,7 @@ body {
 .main {
   display: flex;
   width: 82%;
+  height: 28em;
   border-radius: 0.25em;
   overflow: hidden;
 }
@@ -44,21 +45,15 @@ body {
 .main__info {
   color: white;
   background-color: hsl(244, 38%, 16%);
-  padding: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.main__info__heading,
-.main__info__desc {
-  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__info__heading {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
+  margin: 4rem 4rem 0;
 }
 
 .main__info__heading__highlight {
@@ -67,10 +62,15 @@ body {
 
 .main__info__desc {
   color: hsla(0, 0%, 100%, 0.75);
+  margin: 3rem 10rem 0 4rem;
+  flex: 1;
 }
 
 .main__info__data {
   color: hsla(0, 0%, 100%, 0.6);
+  margin: auto 10rem 4rem 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main__info__data--nums {
