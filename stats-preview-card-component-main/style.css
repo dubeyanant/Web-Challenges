@@ -23,11 +23,14 @@ body {
   justify-content: center;
   min-height: 100vh;
   line-height: 1.4;
+  background-color: hsl(233, 47%, 7%);
 }
 
 .main {
   display: flex;
   width: 70%;
+  border-radius: 0.5em;
+  overflow: hidden;
 }
 
 .main--child {
@@ -57,6 +60,46 @@ body {
   object-fit: cover;
 }
 
+.main__info__wrapper {
+  background-color: hsl(244, 38%, 16%);
+  color: white;
+}
+
 .main__info {
   padding: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__info__heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.main__info__heading__highlight {
+  color: hsl(277, 64%, 61%);
+}
+
+.main__info__desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 2vw 3em 0 0;
+  flex: 1;
+}
+
+.main__info__data {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4em 0 0;
+  font-size: 0.9em;
+  color: hsla(0, 0%, 100%, 0.6);
+  flex-wrap: wrap;
+}
+
+.main__info__data--nums {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: white;
 }
