@@ -22,13 +22,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 5rem 0;
   line-height: 1.4;
   background-color: hsl(233, 47%, 7%);
 }
 
 .main {
   display: flex;
-  width: 70%;
+  max-width: 70%;
+  min-width: 355px;
   border-radius: 0.5em;
   overflow: hidden;
 }
@@ -75,7 +77,7 @@ body {
 .main__info__heading {
   font-size: 2.2rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .main__info__heading__highlight {
@@ -102,4 +104,39 @@ body {
   font-size: 1.4em;
   font-weight: 700;
   color: white;
+}
+
+@media (max-width: 800px) {
+  .main__info {
+    text-align: center;
+  }
+
+  .main__info__heading {
+    font-size: 1.8rem;
+  }
+
+  .main__info__desc {
+    margin: 2rem auto;
+  }
+
+  .main__info__data {
+    margin: 0;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .main__info__heading {
+    font-size: 1.6rem;
+  }
+
+  .main__info__data {
+    margin: 3vh 0 0;
+    margin: 0;
+  }
 }
