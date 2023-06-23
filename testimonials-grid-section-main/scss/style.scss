@@ -3,13 +3,12 @@
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
-  background-color: hsl(0, 0%, 81%, 50%);
+  background-color: hsl(210, 46%, 95%);
   font-size: 13px;
   font-weight: 500;
-
-  @media (min-width: 375px) {
-    background-color: black;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
@@ -17,32 +16,65 @@ body {
   display: grid;
   gap: 2em;
 
+  @media (min-width: 375px) {
+    grid-template-areas:
+      "a a a a b c"
+      "d e e e e c";
+    max-width: 80%;
+    padding: 0;
+  }
+
   &__first {
     background-color: hsl(263, 55%, 52%);
     position: relative;
 
+    @media (min-width: 375px) {
+      grid-area: a;
+    }
+
     &__bg__img {
       position: absolute;
-      width: 35%;
+      width: 35vw;
       right: 2em;
       top: 0em;
+
+      @media (min-width: 375px) {
+        width: 8vw;
+        right: 7em;
+      }
     }
   }
 
   &__second {
     background-color: hsl(217, 19%, 35%);
+
+    @media (min-width: 375px) {
+      grid-area: b;
+    }
   }
 
   &__third {
     background-color: hsl(0, 0%, 100%);
+
+    @media (min-width: 375px) {
+      grid-area: d;
+    }
   }
 
   &__fourth {
     background-color: hsl(219, 29%, 14%);
+
+    @media (min-width: 375px) {
+      grid-area: e;
+    }
   }
 
   &__fifth {
     background-color: hsl(0, 0%, 100%);
+
+    @media (min-width: 375px) {
+      grid-area: c;
+    }
   }
 }
 
@@ -74,11 +106,15 @@ body {
   color: hsl(0, 0%, 81%);
   font-weight: 600;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
 }
 
 .cards--veri {
   color: hsl(0, 0%, 81%, 50%);
   font-size: 0.75rem;
+  position: relative;
+  z-index: 1;
 }
 
 .cards--heading {
@@ -94,6 +130,8 @@ body {
 .cards--desc {
   font-size: 0.85rem;
   color: hsl(0, 0%, 81%, 70%);
+  position: relative;
+  z-index: 1;
 }
 
 .cards--blue {
